@@ -98,6 +98,11 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#printing-output-to-the-console">Printing output to the Console</a><ul>
+<li><a class="reference internal" href="#more-examples">More Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conditional-statements">Conditional Statements</a><ul>
+<li><a class="reference internal" href="#chaining-mutliple-if-then-statements-together">Chaining mutliple IF.. THEN statements together</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </li>
@@ -237,7 +242,7 @@ are running properly while your program runs.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">DEBUG</span>   <span class="s2">&quot;Wow this is a&quot;</span><span class="p">,</span> <span class="s2">&quot; multi message!&quot;</span>
 </pre></div>
 </div>
-<p><strong>We can use the keyword (**CR</strong>) to start on a new line. Think of it like pressing enter in Microsoft Word:**</p>
+<p><strong>We can use the keyword (CR) to start on a new line. Think of it like pressing enter in Microsoft Word:</strong></p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">DEBUG</span>   <span class="s2">&quot;This should be on&quot;</span><span class="p">,</span> <span class="n">CR</span>
 <span class="n">DEBUG</span>   <span class="s2">&quot;multiple lines.&quot;</span>
 </pre></div>
@@ -266,6 +271,119 @@ you can follow the link to read more.</p>
     <span class="n">DEBUG</span> <span class="n">DEC</span> <span class="n">x</span>
     <span class="n">END</span>
 </pre></div>
+</div>
+<div class="section" id="more-examples">
+<h2>More Examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
+<p>Using the keyword (<strong>?</strong>) we can auto-print the variable name</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     Word
+
+Init:
+    x = 65
+
+Main:
+    DEBUG DEC ? x
+    END
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="conditional-statements">
+<h1>Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
+<p>Conditional statement are used as a way to direct the way things operate. For example, if I say &#8220;Please go to the store to
+buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
+<p>Notice how If there isn&#8217;t milk then we buy apple juice. However if there IS milk then we buy milk. This type of conditional statements
+are ordered like this in PBasic:</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd><dl class="first last docutils">
+<dt>IF (<em>condition</em>) THEN</dt>
+<dd><em>statement(s)</em></dd>
+</dl>
+</dd>
+</dl>
+<p>A condition is made up of comparison symbols</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Comparison Operator Symbol</th>
+<th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>=</td>
+<td>Equal</td>
+</tr>
+<tr class="row-odd"><td>&lt;&gt;</td>
+<td>Not Equal</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>Greater Than</td>
+</tr>
+<tr class="row-odd"><td>&lt;</td>
+<td>Less Than</td>
+</tr>
+<tr class="row-even"><td>&gt;=</td>
+<td>Greater Than or Equal To</td>
+</tr>
+<tr class="row-odd"><td>&lt;=</td>
+<td>Less Than or Equal To</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Here are some examples:</strong></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">(</span><span class="mi">4</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="n">THEN</span>
+    <span class="n">DEBUG</span> <span class="s2">&quot;4 equals 5&quot;</span>
+
+<span class="n">IF</span> <span class="p">(</span><span class="mi">10</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)</span> <span class="n">THEN</span>
+    <span class="n">DEBUG</span> <span class="s2">&quot;10 is less than or equal to 100&quot;</span>
+</pre></div>
+</div>
+<div class="section" id="chaining-mutliple-if-then-statements-together">
+<h2>Chaining mutliple IF.. THEN statements together<a class="headerlink" href="#chaining-mutliple-if-then-statements-together" title="Permalink to this headline">¶</a></h2>
+<p>You can also call chain multiple IF.. THEN statements together through the use of IF.. ELSEIF.. and/or ELSE..</p>
+<p><strong>Structure for Multiple If statements:</strong></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="n">THEN</span>
+    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">ELSEIF</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="n">THEN</span>
+    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">ELSE</span>
+    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">ENDIF</span>
+</pre></div>
+</div>
+<p><strong>Example:</strong></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
+
+Main:
+    x = 100
+
+    IF (x &lt; 200) THEN
+        DEBUG DEC ? x
+    ELSEIF (x &lt; 50) THEN
+        DEBUG DEC ? x
+    ELSE
+        DEBUG DEC ? x
+    ENDIF
+</pre></div>
+</div>
+<p><strong>Notes about Mutliple If statements</strong>
+It&#8217;s not necessary to have an ELSE statement at the end. If it&#8217;s omitted then the statement will stop at the last ELSEIF statement instead.</p>
+<p>Also you have the ability to nest statements inside of each other like so:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
+
+Main:
+    x = 5
+
+    IF (x &lt; 10) THEN
+        IF (x &gt; 5) THEN
+            DEBUG &quot;x is between 5 and 10&quot;
+            DEBUG ? x
+</pre></div>
+</div>
 </div>
 <div class="section" id="indices-and-tables">
 <h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>

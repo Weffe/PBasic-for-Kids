@@ -84,7 +84,10 @@
             
                 <!-- Local TOC -->
                 <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Printing output to the Console</a></li>
+<li><a class="reference internal" href="#">Printing output to the Console</a><ul>
+<li><a class="reference internal" href="#more-examples">More Examples</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -142,7 +145,7 @@ are running properly while your program runs.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">DEBUG</span>   <span class="s2">&quot;Wow this is a&quot;</span><span class="p">,</span> <span class="s2">&quot; multi message!&quot;</span>
 </pre></div>
 </div>
-<p><strong>We can use the keyword (**CR</strong>) to start on a new line. Think of it like pressing enter in Microsoft Word:**</p>
+<p><strong>We can use the keyword (CR) to start on a new line. Think of it like pressing enter in Microsoft Word:</strong></p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">DEBUG</span>   <span class="s2">&quot;This should be on&quot;</span><span class="p">,</span> <span class="n">CR</span>
 <span class="n">DEBUG</span>   <span class="s2">&quot;multiple lines.&quot;</span>
 </pre></div>
@@ -171,6 +174,20 @@ you can follow the link to read more.</p>
     <span class="n">DEBUG</span> <span class="n">DEC</span> <span class="n">x</span>
     <span class="n">END</span>
 </pre></div>
+</div>
+<div class="section" id="more-examples">
+<h2>More Examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
+<p>Using the keyword (<strong>?</strong>) we can auto-print the variable name</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     Word
+
+Init:
+    x = 65
+
+Main:
+    DEBUG DEC ? x
+    END
+</pre></div>
+</div>
 </div>
 </div>
 

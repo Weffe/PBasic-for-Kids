@@ -1,6 +1,5 @@
 ..  toctree::
     :maxdepth: 3
-    :caption: Contents:
 
 Welcome to PBasic for Kids!
 ***************************
@@ -25,6 +24,10 @@ is Variables!
 --------
 
 .. include:: printing.rst
+
+--------
+
+.. include:: conditional_statements.rst
 
 
 Indices and tables

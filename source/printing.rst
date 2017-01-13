@@ -12,7 +12,7 @@ are running properly while your program runs.
 ::
         DEBUG   "Wow this is a", " multi message!"
 
-**We can use the keyword (**CR**) to start on a new line. Think of it like pressing enter in Microsoft Word:**
+**We can use the keyword (CR) to start on a new line. Think of it like pressing enter in Microsoft Word:**
 ::
         DEBUG   "This should be on", CR
         DEBUG   "multiple lines."
@@ -46,7 +46,7 @@ Anyways, in order to properly print the value of *x* we need to use the decimal 
 
 More Examples
 =============
-Using **?** we can auto-print the variable name
+Using the keyword (**?**) we can auto-print the variable name
 ::
         x   VAR     Word
 
