@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Variables &mdash; PBasic for Kids 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="PBasic for Kids 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PBasic for Kids
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Variables</a><ul>
+<li><a class="reference internal" href="#defining-and-using-variables">Defining and Using Variables</a><ul>
+<li><a class="reference internal" href="#here-s-an-analogy-of-how-the-size-difference-works">Here&#8217;s an analogy of how the size difference works</a></li>
+<li><a class="reference internal" href="#some-examples-of-declaring-variables">Some examples of declaring variables</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#some-notes-on-variable-types">Some Notes on Variable Types</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">PBasic for Kids</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Variables</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/variables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h1>
+<p>Variables are a way to temporarily store data. Think of it as the same as variables in your math class where you can define
+x = 5</p>
+<div class="section" id="defining-and-using-variables">
+<h2>Defining and Using Variables<a class="headerlink" href="#defining-and-using-variables" title="Permalink to this headline">¶</a></h2>
+<p>Before you can use a variable in a PBASIC program you must declare it. &#8220;Declare&#8221; means letting the BASIC Stamp know that
+you plan to use a variable. The format for declaring variables is as follows</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">variable_name</span>    <span class="n">VAR</span>     <span class="n">VarType</span>
+</pre></div>
+</div>
+<p>VarType refers to the following 4 values: <strong>Bit</strong>, <strong>Nib</strong>, <strong>Byte</strong>, and <strong>Word</strong>. Try to think of a variable type as classifying how much
+space the variable has to store values.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">VarType</th>
+<th class="head">Value Size</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Bit</td>
+<td>Value can be 0 or 1</td>
+</tr>
+<tr class="row-odd"><td>Nib</td>
+<td>Value can be 0 to 15</td>
+</tr>
+<tr class="row-even"><td>Byte</td>
+<td>Value can be 0 to 255</td>
+</tr>
+<tr class="row-odd"><td>Word</td>
+<td>Value can be 0 to 65535</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="here-s-an-analogy-of-how-the-size-difference-works">
+<h3>Here&#8217;s an analogy of how the size difference works<a class="headerlink" href="#here-s-an-analogy-of-how-the-size-difference-works" title="Permalink to this headline">¶</a></h3>
+<p>We can arrange these 4 objects in order by how much they can store: Envelope, Shoebox, Fridge, Room</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Envelope</span> <span class="p">(</span><span class="n">Bit</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Shoebox</span> <span class="p">(</span><span class="n">Nib</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Fridge</span> <span class="p">(</span><span class="n">Byte</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Room</span> <span class="p">(</span><span class="n">Word</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="some-examples-of-declaring-variables">
+<h3>Some examples of declaring variables<a class="headerlink" href="#some-examples-of-declaring-variables" title="Permalink to this headline">¶</a></h3>
+<p>Choose variable names that make sense to you and are not absurd like: ThisVariable_DoessomethingreallyCOOL</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span>               <span class="n">VAR</span>     <span class="n">Bit</span>
+<span class="n">dog</span>             <span class="n">VAR</span>     <span class="n">WORD</span>
+<span class="n">is_zero</span>         <span class="n">VAR</span>     <span class="n">Nib</span>
+<span class="n">someVariable</span>    <span class="n">VAR</span>     <span class="n">Byte</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="some-notes-on-variable-types">
+<h2>Some Notes on Variable Types<a class="headerlink" href="#some-notes-on-variable-types" title="Permalink to this headline">¶</a></h2>
+<p>Under certain situations you might use different variable types. However, for the programming problems that you will
+encounter while undergoing the competition it might be best to just stick to <strong>Byte</strong> and <strong>Word</strong></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Rogelio Negrete.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
