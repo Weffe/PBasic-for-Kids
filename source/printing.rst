@@ -11,14 +11,23 @@ are running properly while your program runs.
         DEBUG   "Hello, World!"
         DEBUG   "I'm learning how to program."
 
-**Multiple messages added together on the same line by using the comma seperator:**
+Using the comma seperator
+=========================
+
+We can have multiple messages added together on the same line by using the comma seperator:
 ::
         DEBUG   "Wow this is a", " multi message!"
+
+Printing on new lines
+=====================
 
 **We can use the keyword (CR) to start on a new line. Think of it like pressing enter in Microsoft Word:**
 ::
         DEBUG   "This should be on", CR
         DEBUG   "multiple lines."
+
+Printing variables
+==================
 
 **We can also print variables:**
 ::
@@ -36,6 +45,8 @@ Uh oh! When trying to run the above code there should be an issue. It's printing
 This is because by default the BS2 model displays everything as ASCII_ characters. I won't go into detail what ASCII is but
 you can follow the link to read more.
 
+..  _ASCII: https://en.wikipedia.org/wiki/ASCII
+
 Anyways, in order to properly print the value of *x* we need to use the decimal formatter, **DEC**:
 ::
 
@@ -48,9 +59,10 @@ Anyways, in order to properly print the value of *x* we need to use the decimal 
         DEBUG DEC x
         END
 
-We also have access to the (**?**) keyword which auto prints our variable name and value.
+Auto-printing variables
+=======================
 
-**Using the keyword (?) we can auto-print the variable name:**
+**Using the keyword (?) we can auto-print the variable name and value:**
 ::
 
     x   VAR     Word
@@ -62,5 +74,18 @@ We also have access to the (**?**) keyword which auto prints our variable name a
         DEBUG DEC ? x
         END
 
+Example of combining everything together
+========================================
 
-..  _ASCII: https://en.wikipedia.org/wiki/ASCII
+::
+
+        x   VAR     Word
+        y   VAR     Word
+
+        Init:
+            x = 65
+            y = 99
+        Main:
+            DEBUG DEC "Our value of x is: ", x, CR
+            DEBUG DEC ? y
+            END

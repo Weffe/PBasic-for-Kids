@@ -102,6 +102,8 @@ You also have the ability to nest IF statements inside of each other like so:
                 IF (x > 5) THEN
                     DEBUG "x is between 5 and 10"
                     DEBUG ? x
+                ENDIF
+            ENDIF
 
 Try to think of nesting as asking another question once you received an answer to your previous question. For example:
 ::

@@ -275,15 +275,17 @@ buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
 <div class="section" id="nesting-if-statements">
 <h2>Nesting IF Statements<a class="headerlink" href="#nesting-if-statements" title="Permalink to this headline">¶</a></h2>
 <p>You also have the ability to nest IF statements inside of each other like so:</p>
-<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">x</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">x</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
 
 <span class="nl">Main:</span>
 <span class="w">    </span><span class="vg">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">5</span>
@@ -292,6 +294,8 @@ buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
 <span class="w">        </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="il">5</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
 <span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;x is between 5 and 10&quot;</span>
 <span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
+<span class="w">        </span><span class="k">ENDIF</span>
+<span class="w">    </span><span class="k">ENDIF</span>
 </pre></div>
 </td></tr></table></div>
 <p>Try to think of nesting as asking another question once you received an answer to your previous question. For example:</p>
