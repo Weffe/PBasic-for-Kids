@@ -1,3 +1,7 @@
+.. |br| raw:: html
+
+   <br />
+
 Getting Started
 ***************
 Before we get started here are a couple of things you should consider downloading: |br|
@@ -13,6 +17,12 @@ is Variables!
 .. _parralax-usb-driver-link: https://www.parallax.com/downloads/parallax-usb-driver-installer
 .. _basic-stamp-editor-link: https://www.parallax.com/downloads/basic-stamp-editor-software-windows
 
-.. |br| raw:: html
 
-   <br />
+Prepping your Basic Stamp Editor
+================================
+
+Before you attempt to run any files make sure to click the top 2 buttons to create
+type headers at the top of your file. These type headers are required in order to for
+the Stamp Editor to know which version of PBasic to compile and run on your robot(s).
+
+For this guide you will be using the Green button and PBasic 2.5

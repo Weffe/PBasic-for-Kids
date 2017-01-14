@@ -34,7 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="PBasic for Kids 1.0 documentation" href="index.html"/>
-        <link rel="prev" title="Printing output to the Console" href="printing.html"/> 
+        <link rel="prev" title="Printing output to the Terminal" href="printing.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -86,9 +86,12 @@
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="printing.html">Printing output to the Console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="printing.html">Printing output to the Terminal</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Conditional Statements</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#chaining-mutliple-if-then-statements-together">Chaining mutliple IF.. THEN statements together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chaining-mutliple-if-then-statements-together">Chaining mutliple IF.. THEN statements together</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#notes-about-mutliple-if-statements">Notes about Mutliple If statements</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#nesting-if-statements">Nesting IF Statements</a></li>
 </ul>
 </li>
@@ -140,16 +143,15 @@
 <h1>Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
 <p>Conditional statement are used as a way to direct the way things operate. For example, if I say &#8220;Please go to the store to
 buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
-<p>Notice how If there isn&#8217;t milk then we buy apple juice. However if there IS milk then we buy milk. This type of conditional statements
-are ordered like this in PBasic:</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd><dl class="first last docutils">
-<dt>IF (<em>condition</em>) THEN</dt>
-<dd><em>statement(s)</em></dd>
-</dl>
-</dd>
-</dl>
+<p>Notice how If there isn&#8217;t milk then we buy apple juice. However if there IS milk then we buy milk.</p>
+<p>These types of conditional statements are ordered like this in PBasic:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">condition</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">statement</span><span class="p">(</span><span class="vg">s</span><span class="p">)</span>
+<span class="k">ENDIF</span>
+</pre></div>
+</td></tr></table></div>
 <p>A condition is made up of comparison symbols</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -183,80 +185,135 @@ are ordered like this in PBasic:</p>
 </tbody>
 </table>
 <p><strong>Here are some examples:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">(</span><span class="mi">4</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">DEBUG</span> <span class="s2">&quot;4 equals 5&quot;</span>
-<span class="n">ENDIF</span>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">5</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;4 equals 5&quot;</span>
+<span class="k">ENDIF</span>
 
-<span class="n">IF</span> <span class="p">(</span><span class="mi">10</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">DEBUG</span> <span class="s2">&quot;10 is less than or equal to 100&quot;</span>
-<span class="n">ENDIF</span>
+<span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="il">10</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="il">100</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;10 is less than or equal to 100&quot;</span>
+<span class="k">ENDIF</span>
 </pre></div>
-</div>
+</td></tr></table></div>
 <div class="section" id="chaining-mutliple-if-then-statements-together">
 <h2>Chaining mutliple IF.. THEN statements together<a class="headerlink" href="#chaining-mutliple-if-then-statements-together" title="Permalink to this headline">¶</a></h2>
 <p>You can also call chain multiple IF.. THEN statements together through the use of IF.. ELSEIF.. and/or ELSE..</p>
 <p><strong>Structure for Multiple If statements:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">ELSEIF</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">ELSE</span>
-    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">ENDIF</span>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">condition</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">statement</span><span class="p">(</span><span class="vg">s</span><span class="p">)</span>
+<span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">condition</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">statement</span><span class="p">(</span><span class="vg">s</span><span class="p">)</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="vg">statement</span><span class="p">(</span><span class="vg">s</span><span class="p">)</span>
+<span class="k">ENDIF</span>
 </pre></div>
-</div>
+</td></tr></table></div>
 <p><strong>Example:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">x</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
 
-Main:
-    x = 100
+<span class="nl">Main:</span>
+<span class="w">    </span><span class="vg">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">100</span>
 
-    IF (x &lt; 200) THEN
-        DEBUG DEC ? x
-    ELSEIF (x &lt; 50) THEN
-        DEBUG DEC ? x
-    ELSE
-        DEBUG DEC ? x
-    ENDIF
+<span class="w">    </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">200</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">        </span><span class="vg">DEBUG</span><span class="w"> </span><span class="vg">DEC</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
+<span class="w">    </span><span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">50</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">        </span><span class="vg">DEBUG</span><span class="w"> </span><span class="vg">DEC</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
+<span class="w">    </span><span class="k">ELSE</span>
+<span class="w">        </span><span class="vg">DEBUG</span><span class="w"> </span><span class="vg">DEC</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
+<span class="w">    </span><span class="k">ENDIF</span>
 </pre></div>
-</div>
-<p><strong>Notes about Mutliple If statements</strong>
-It&#8217;s not necessary to have an ELSE statement at the end. If it&#8217;s omitted then the statement will stop at the last ELSEIF statement instead.</p>
+</td></tr></table></div>
+<div class="section" id="notes-about-mutliple-if-statements">
+<h3>Notes about Mutliple If statements<a class="headerlink" href="#notes-about-mutliple-if-statements" title="Permalink to this headline">¶</a></h3>
+<p>It&#8217;s not necessary to have an ELSE statement at the end. If it&#8217;s omitted then the statement will stop at the last ELSEIF statement instead.</p>
 <p>Which means that this is also a valid IF Statement:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">x</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
 
-Main:
-    x = 100
+<span class="nl">Main:</span>
+<span class="w">    </span><span class="vg">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">100</span>
 
-    IF (x &lt; 200) THEN
-        DEBUG DEC ? x
-    ELSEIF (x &lt; 50) THEN
-        DEBUG DEC ? x
-    ENDIF
+<span class="w">    </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">200</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">        </span><span class="vg">DEBUG</span><span class="w"> </span><span class="vg">DEC</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
+<span class="w">    </span><span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">50</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">        </span><span class="vg">DEBUG</span><span class="w"> </span><span class="vg">DEC</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
+<span class="w">    </span><span class="k">ENDIF</span>
 </pre></div>
+</td></tr></table></div>
 </div>
 </div>
 <div class="section" id="nesting-if-statements">
 <h2>Nesting IF Statements<a class="headerlink" href="#nesting-if-statements" title="Permalink to this headline">¶</a></h2>
 <p>You also have the ability to nest IF statements inside of each other like so:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">x</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
 
-Main:
-    x = 5
+<span class="nl">Main:</span>
+<span class="w">    </span><span class="vg">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">5</span>
 
-    IF (x &lt; 10) THEN
-        IF (x &gt; 5) THEN
-            DEBUG &quot;x is between 5 and 10&quot;
-            DEBUG ? x
+<span class="w">    </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">10</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">        </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="il">5</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;x is between 5 and 10&quot;</span>
+<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
 </pre></div>
-</div>
-<p>Try to think of nesting as asking another question once you received an answer to your previous question.
-For example, &#8220;Did Joe go to the store? If so, did he buy chocolate? If he didn&#8217;t buy chocolate, did he buy milk?&#8221;</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>Did Joe go to the store?
-    If so, did he buy chocolate?
-    If he didn&#39;t buy chocolate, did he buy milk?
+</td></tr></table></div>
+<p>Try to think of nesting as asking another question once you received an answer to your previous question. For example:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">joe</span><span class="w"> </span><span class="vg">went</span><span class="w"> </span><span class="vg">to</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">store</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">he</span><span class="w"> </span><span class="vg">did</span><span class="w"> </span><span class="vg">buy</span><span class="w"> </span><span class="vg">chocolate</span><span class="p">)</span>
+<span class="w">        </span><span class="s2">&quot;Joe bough chocolate at the store&quot;</span>
+<span class="w">    </span><span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">he</span><span class="w"> </span><span class="vg">did</span><span class="w"> </span><span class="vg">buy</span><span class="w"> </span><span class="vg">milk</span><span class="p">)</span>
+<span class="w">        </span><span class="s2">&quot;Joe bought milk at the store&quot;</span>
+<span class="w">    </span><span class="k">ELSE</span>
+<span class="w">        </span><span class="s2">&quot;Joe bought apple juice at the store&quot;</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="s2">&quot;Joe never went to the store&quot;</span>
 </pre></div>
-</div>
+</td></tr></table></div>
 </div>
 </div>
 
@@ -268,7 +325,7 @@ For example, &#8220;Did Joe go to the store? If so, did he buy chocolate? If he 
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="printing.html" class="btn btn-neutral" title="Printing output to the Console" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="printing.html" class="btn btn-neutral" title="Printing output to the Terminal" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

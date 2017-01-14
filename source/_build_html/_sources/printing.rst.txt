@@ -1,5 +1,8 @@
-Printing output to the Console
-******************************
+.. highlight:: basic
+   :linenothreshold: 3
+
+Printing output to the Terminal
+*******************************
 **DEBUG** is used to print output to the computer screen while running your program. Think of it as a way to make sure things are
 are running properly while your program runs.
 
@@ -19,14 +22,15 @@ are running properly while your program runs.
 
 **We can also print variables:**
 ::
-        x   VAR     Word
 
-        Init:
-            x = 65
+    x   VAR     Word
 
-        Main:
-            DEBUG x
-            END
+    Init:
+        x = 65
+
+    Main:
+        DEBUG x
+        END
 
 Uh oh! When trying to run the above code there should be an issue. It's printing the letter "A"?!
 This is because by default the BS2 model displays everything as ASCII_ characters. I won't go into detail what ASCII is but
@@ -34,28 +38,29 @@ you can follow the link to read more.
 
 Anyways, in order to properly print the value of *x* we need to use the decimal formatter, **DEC**:
 ::
-        x   VAR     Word
 
-        Init:
-            x = 65
+    x   VAR     Word
 
-        Main:
-            DEBUG DEC x
-            END
+    Init:
+        x = 65
 
+    Main:
+        DEBUG DEC x
+        END
 
-More Examples
-=============
-Using the keyword (**?**) we can auto-print the variable name
+We also have access to the (**?**) keyword which auto prints our variable name and value.
+
+**Using the keyword (?) we can auto-print the variable name:**
 ::
-        x   VAR     Word
 
-        Init:
-            x = 65
+    x   VAR     Word
 
-        Main:
-            DEBUG DEC ? x
-            END
+    Init:
+        x = 65
+
+    Main:
+        DEBUG DEC ? x
+        END
 
 
 ..  _ASCII: https://en.wikipedia.org/wiki/ASCII

@@ -7,7 +7,7 @@ PBasic does a good job at being a language to power the robots while still being
 .. _Parralax: https://www.parallax.com/
 .. _PBasic: http://learn.parallax.com/educators/teach/pbasic-programming-basic-stamp
 
-..  toctree::
+.. toctree::
     :maxdepth: 2
 
     getting_started

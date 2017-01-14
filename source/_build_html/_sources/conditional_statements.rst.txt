@@ -1,14 +1,19 @@
+.. highlight:: basic
+   :linenothreshold: 3
+
 Conditional Statements
 **********************
+
 Conditional statement are used as a way to direct the way things operate. For example, if I say "Please go to the store to
 buy milk. If they don't have milk then buy apple juice".
 
-Notice how If there isn't milk then we buy apple juice. However if there IS milk then we buy milk. This type of conditional statements
-are ordered like this in PBasic:
+Notice how If there isn't milk then we buy apple juice. However if there IS milk then we buy milk.
 
+These types of conditional statements are ordered like this in PBasic:
 ::
-        IF (*condition*) THEN
-            *statement(s)*
+        IF (condition) THEN
+            statement(s)
+        ENDIF
 
 
 A condition is made up of comparison symbols
@@ -66,7 +71,9 @@ You can also call chain multiple IF.. THEN statements together through the use o
             DEBUG DEC ? x
         ENDIF
 
-**Notes about Mutliple If statements**
+Notes about Mutliple If statements
+--------------------------------------
+
 It's not necessary to have an ELSE statement at the end. If it's omitted then the statement will stop at the last ELSEIF statement instead.
 
 Which means that this is also a valid IF Statement:
@@ -96,9 +103,14 @@ You also have the ability to nest IF statements inside of each other like so:
                     DEBUG "x is between 5 and 10"
                     DEBUG ? x
 
-Try to think of nesting as asking another question once you received an answer to your previous question.
-For example, "Did Joe go to the store? If so, did he buy chocolate? If he didn't buy chocolate, did he buy milk?"
+Try to think of nesting as asking another question once you received an answer to your previous question. For example:
 ::
-        Did Joe go to the store?
-            If so, did he buy chocolate?
-            If he didn't buy chocolate, did he buy milk?
+        IF (joe went to the store)
+            IF (he did buy chocolate)
+                "Joe bough chocolate at the store"
+            ELSEIF (he did buy milk)
+                "Joe bought milk at the store"
+            ELSE
+                "Joe bought apple juice at the store"
+        ELSE
+            "Joe never went to the store"

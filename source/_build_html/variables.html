@@ -149,7 +149,7 @@ x = 5</p>
 <h2>Defining and Using Variables<a class="headerlink" href="#defining-and-using-variables" title="Permalink to this headline">¶</a></h2>
 <p>Before you can use a variable in a PBASIC program you must declare it. &#8220;Declare&#8221; means letting the BASIC Stamp know that
 you plan to use a variable. The format for declaring variables is as follows</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">variable_name</span>    <span class="n">VAR</span>     <span class="n">VarType</span>
+<div class="highlight-basic"><div class="highlight"><pre><span></span><span class="vg">variable_name</span><span class="w">    </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">VarType</span>
 </pre></div>
 </div>
 <p>VarType refers to the following 4 values: <strong>Bit</strong>, <strong>Nib</strong>, <strong>Byte</strong>, and <strong>Word</strong>. Try to think of a variable type as classifying how much
@@ -182,19 +182,22 @@ space the variable has to store values.</p>
 <div class="section" id="here-s-an-analogy-of-how-the-size-difference-works">
 <h3>Here&#8217;s an analogy of how the size difference works<a class="headerlink" href="#here-s-an-analogy-of-how-the-size-difference-works" title="Permalink to this headline">¶</a></h3>
 <p>We can arrange these 4 objects in order by how much they can store: Envelope, Shoebox, Fridge, Room</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Envelope</span> <span class="p">(</span><span class="n">Bit</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Shoebox</span> <span class="p">(</span><span class="n">Nib</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Fridge</span> <span class="p">(</span><span class="n">Byte</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Room</span> <span class="p">(</span><span class="n">Word</span><span class="p">)</span>
+<div class="highlight-basic"><div class="highlight"><pre><span></span><span class="vg">Envelope</span><span class="w"> </span><span class="p">(</span><span class="vg">Bit</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="vg">Shoebox</span><span class="w"> </span><span class="p">(</span><span class="vg">Nib</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="vg">Fridge</span><span class="w"> </span><span class="p">(</span><span class="vg">Byte</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="vg">Room</span><span class="w"> </span><span class="p">(</span><span class="vg">Word</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="some-examples-of-declaring-variables">
 <h3>Some examples of declaring variables<a class="headerlink" href="#some-examples-of-declaring-variables" title="Permalink to this headline">¶</a></h3>
 <p>Choose variable names that make sense to you and are not absurd like: ThisVariable_DoessomethingreallyCOOL</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span>               <span class="n">VAR</span>     <span class="n">Bit</span>
-<span class="n">dog</span>             <span class="n">VAR</span>     <span class="n">WORD</span>
-<span class="n">is_zero</span>         <span class="n">VAR</span>     <span class="n">Nib</span>
-<span class="n">someVariable</span>    <span class="n">VAR</span>     <span class="n">Byte</span>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">x</span><span class="w">               </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Bit</span>
+<span class="vg">dog</span><span class="w">             </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+<span class="vg">is_zero</span><span class="w">         </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Nib</span>
+<span class="vg">someVariable</span><span class="w">    </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Byte</span>
 </pre></div>
-</div>
+</td></tr></table></div>
 </div>
 </div>
 <div class="section" id="some-notes-on-variable-types">
