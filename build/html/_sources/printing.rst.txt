@@ -1,6 +1,5 @@
 ..  toctree::
-    :maxdepth: 3
-    :numbered:
+    :maxdepth: 2
     Printing output to the Console
 
 

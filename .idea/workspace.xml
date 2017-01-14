@@ -16,18 +16,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/conditional_statements.html" afterPath="$PROJECT_DIR$/build/html/conditional_statements.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/index.html" afterPath="$PROJECT_DIR$/build/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/searchindex.js" afterPath="$PROJECT_DIR$/build/html/searchindex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/variables.html" afterPath="$PROJECT_DIR$/build/html/variables.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/.doctrees/conditional_statements.doctree" afterPath="$PROJECT_DIR$/source/_build_html/.doctrees/conditional_statements.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/.doctrees/index.doctree" afterPath="$PROJECT_DIR$/source/_build_html/.doctrees/index.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/.doctrees/printing.doctree" afterPath="$PROJECT_DIR$/source/_build_html/.doctrees/printing.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/.doctrees/variables.doctree" afterPath="$PROJECT_DIR$/source/_build_html/.doctrees/variables.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/_sources/conditional_statements.rst.txt" afterPath="$PROJECT_DIR$/source/_build_html/_sources/conditional_statements.rst.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/_sources/index.rst.txt" afterPath="$PROJECT_DIR$/source/_build_html/_sources/index.rst.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/_sources/printing.rst.txt" afterPath="$PROJECT_DIR$/source/_build_html/_sources/printing.rst.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/_sources/variables.rst.txt" afterPath="$PROJECT_DIR$/source/_build_html/_sources/variables.rst.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/conditional_statements.html" afterPath="$PROJECT_DIR$/source/_build_html/conditional_statements.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/index.html" afterPath="$PROJECT_DIR$/source/_build_html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/searchindex.js" afterPath="$PROJECT_DIR$/source/_build_html/searchindex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_build_html/variables.html" afterPath="$PROJECT_DIR$/source/_build_html/variables.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/conditional_statements.rst" afterPath="$PROJECT_DIR$/source/conditional_statements.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.rst" afterPath="$PROJECT_DIR$/source/index.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/printing.rst" afterPath="$PROJECT_DIR$/source/printing.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/variables.rst" afterPath="$PROJECT_DIR$/source/variables.rst" />
     </list>
@@ -47,8 +48,8 @@
       <file leaf-file-name="index.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/index.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -57,28 +58,28 @@
       <file leaf-file-name="printing.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/printing.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conditional_statements.rst" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conditional_statements.rst" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/conditional_statements.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="443">
+              <caret line="104" column="101" lean-forward="false" selection-start-line="104" selection-start-column="101" selection-end-line="104" selection-end-column="101" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.rst" pinned="false" current-in-tab="true">
+      <file leaf-file-name="variables.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/variables.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -100,10 +101,10 @@
       <list>
         <option value="$PROJECT_DIR$/source/conf.py" />
         <option value="$PROJECT_DIR$/source/if_then_else.rst" />
-        <option value="$PROJECT_DIR$/source/index.rst" />
-        <option value="$PROJECT_DIR$/source/printing.rst" />
-        <option value="$PROJECT_DIR$/source/conditional_statements.rst" />
         <option value="$PROJECT_DIR$/source/variables.rst" />
+        <option value="$PROJECT_DIR$/source/printing.rst" />
+        <option value="$PROJECT_DIR$/source/index.rst" />
+        <option value="$PROJECT_DIR$/source/conditional_statements.rst" />
       </list>
     </option>
   </component>
@@ -632,72 +633,72 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1484359282169" expanded="false" signature="8006:8010" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="8140:8144" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="8274:8278" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="10305:10311" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="10324:10330" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="10386:10392" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="10393:10398" ph="'" />
-            <marker date="1484359282169" expanded="false" signature="10424:10430" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="10682:10688" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="10701:10707" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="10756:10762" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="10777:10783" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="11058:11064" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="11081:11087" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="11193:11199" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="11214:11220" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="14221:14225" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="14225:14229" ph="&gt;" />
-            <marker date="1484359282169" expanded="false" signature="14285:14289" ph="&gt;" />
-            <marker date="1484359282169" expanded="false" signature="14347:14351" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="14407:14411" ph="&gt;" />
-            <marker date="1484359282169" expanded="false" signature="14482:14486" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="14897:14903" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="14913:14919" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="15050:15054" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="15193:15199" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="15230:15236" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="16620:16624" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="16671:16675" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="17178:17182" ph="&lt;" />
-            <marker date="1484359282169" expanded="false" signature="17206:17210" ph="&gt;" />
-            <marker date="1484359282169" expanded="false" signature="17237:17243" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="17264:17270" ph="&quot;" />
-            <marker date="1484359282169" expanded="false" signature="17958:17964" ph="©" />
+            <marker date="1484359960361" expanded="false" signature="8006:8010" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="8140:8144" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="8274:8278" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="10305:10311" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="10324:10330" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="10386:10392" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="10393:10398" ph="'" />
+            <marker date="1484359960361" expanded="false" signature="10424:10430" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="10682:10688" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="10701:10707" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="10756:10762" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="10777:10783" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="11058:11064" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="11081:11087" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="11193:11199" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="11214:11220" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="14221:14225" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="14225:14229" ph="&gt;" />
+            <marker date="1484359960361" expanded="false" signature="14285:14289" ph="&gt;" />
+            <marker date="1484359960361" expanded="false" signature="14347:14351" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="14407:14411" ph="&gt;" />
+            <marker date="1484359960361" expanded="false" signature="14482:14486" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="14897:14903" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="14913:14919" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="15050:15054" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="15193:15199" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="15230:15236" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="16620:16624" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="16671:16675" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="17473:17477" ph="&lt;" />
+            <marker date="1484359960361" expanded="false" signature="17501:17505" ph="&gt;" />
+            <marker date="1484359960361" expanded="false" signature="17532:17538" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="17559:17565" ph="&quot;" />
+            <marker date="1484359960361" expanded="false" signature="18597:18603" ph="©" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/variables.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/index.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/printing.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/conditional_statements.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/variables.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="443">
+          <caret line="104" column="101" lean-forward="false" selection-start-line="104" selection-start-column="101" selection-end-line="104" selection-end-column="101" />
           <folding />
         </state>
       </provider>

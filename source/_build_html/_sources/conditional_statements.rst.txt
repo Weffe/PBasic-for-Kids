@@ -1,6 +1,5 @@
 ..  toctree::
-    :maxdepth: 3
-    :numbered:
+    :maxdepth: 2
     Conditional Statements
     Chaining mutliple IF.. THEN statements together
 
@@ -75,7 +74,22 @@ You can also call chain multiple IF.. THEN statements together through the use o
 **Notes about Mutliple If statements**
 It's not necessary to have an ELSE statement at the end. If it's omitted then the statement will stop at the last ELSEIF statement instead.
 
-Also you have the ability to nest statements inside of each other like so:
+Which means that this is also a valid IF Statement:
+::
+    x   VAR     WORD
+
+    Main:
+        x = 100
+
+        IF (x < 200) THEN
+            DEBUG DEC ? x
+        ELSEIF (x < 50) THEN
+            DEBUG DEC ? x
+        ENDIF
+
+Nesting IF Statements
+=====================
+You also have the ability to nest IF statements inside of each other like so:
 ::
         x   VAR     WORD
 
@@ -87,3 +101,9 @@ Also you have the ability to nest statements inside of each other like so:
                     DEBUG "x is between 5 and 10"
                     DEBUG ? x
 
+Try to think of nesting as asking another question once you received an answer to your previous question.
+For example, "Did Joe go to the store? If so, did he buy chocolate? If he didn't buy chocolate, did he buy milk?"
+::
+        Did Joe go to the store?
+            If so, did he buy chocolate?
+            If he didn't buy chocolate, did he buy milk?

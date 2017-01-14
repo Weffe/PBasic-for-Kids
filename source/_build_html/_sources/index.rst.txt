@@ -1,10 +1,6 @@
 ..  toctree::
-    :maxdepth: 3
-    :numbered:
-    index
-    variables
-    printing
-    conditional_statements
+    :maxdepth: 2
+    Getting Started
 
 Welcome to PBasic for Kids!
 ***************************

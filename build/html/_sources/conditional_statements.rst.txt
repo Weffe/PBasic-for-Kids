@@ -1,6 +1,5 @@
 ..  toctree::
-    :maxdepth: 3
-    :numbered:
+    :maxdepth: 2
     Conditional Statements
     Chaining mutliple IF.. THEN statements together
 
@@ -87,3 +86,8 @@ Also you have the ability to nest statements inside of each other like so:
                     DEBUG "x is between 5 and 10"
                     DEBUG ? x
 
+Try to think of nesting as asking another question once you received an answer to your previous question.
+For example, "Did Joe go to the store? If so, did he buy chocolate?"
+::
+        Did Joe go to the store?
+            If so, did he buy chocolate?

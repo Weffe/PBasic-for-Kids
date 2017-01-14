@@ -103,6 +103,7 @@
 </li>
 <li><a class="reference internal" href="#conditional-statements">Conditional Statements</a><ul>
 <li><a class="reference internal" href="#chaining-mutliple-if-then-statements-together">Chaining mutliple IF.. THEN statements together</a></li>
+<li><a class="reference internal" href="#nesting-if-statements">Nesting IF Statements</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </li>
@@ -376,7 +377,23 @@ Main:
 </div>
 <p><strong>Notes about Mutliple If statements</strong>
 It&#8217;s not necessary to have an ELSE statement at the end. If it&#8217;s omitted then the statement will stop at the last ELSEIF statement instead.</p>
-<p>Also you have the ability to nest statements inside of each other like so:</p>
+<p>Which means that this is also a valid IF Statement:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
+
+Main:
+    x = 100
+
+    IF (x &lt; 200) THEN
+        DEBUG DEC ? x
+    ELSEIF (x &lt; 50) THEN
+        DEBUG DEC ? x
+    ENDIF
+</pre></div>
+</div>
+</div>
+<div class="section" id="nesting-if-statements">
+<h2>Nesting IF Statements<a class="headerlink" href="#nesting-if-statements" title="Permalink to this headline">¶</a></h2>
+<p>You also have the ability to nest IF statements inside of each other like so:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
 
 Main:
@@ -386,6 +403,13 @@ Main:
         IF (x &gt; 5) THEN
             DEBUG &quot;x is between 5 and 10&quot;
             DEBUG ? x
+</pre></div>
+</div>
+<p>Try to think of nesting as asking another question once you received an answer to your previous question.
+For example, &#8220;Did Joe go to the store? If so, did he buy chocolate? If he didn&#8217;t buy chocolate, did he buy milk?&#8221;</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Did Joe go to the store?
+    If so, did he buy chocolate?
+    If he didn&#39;t buy chocolate, did he buy milk?
 </pre></div>
 </div>
 </div>
