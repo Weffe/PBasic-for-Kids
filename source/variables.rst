@@ -1,8 +1,3 @@
-..  toctree::
-    :maxdepth: 2
-    Variables
-    Defining and Using Variables
-
 Variables
 *********
 Variables are a way to temporarily store data. Think of it as the same as variables in your math class where you can define

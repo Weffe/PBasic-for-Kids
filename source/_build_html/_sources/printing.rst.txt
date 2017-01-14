@@ -1,8 +1,3 @@
-..  toctree::
-    :maxdepth: 2
-    Printing output to the Console
-
-
 Printing output to the Console
 ******************************
 **DEBUG** is used to print output to the computer screen while running your program. Think of it as a way to make sure things are

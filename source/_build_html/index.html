@@ -33,7 +33,8 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="PBasic for Kids 1.0 documentation" href="#"/> 
+    <link rel="top" title="PBasic for Kids 1.0 documentation" href="#"/>
+        <link rel="next" title="Getting Started" href="getting_started.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,33 +83,13 @@
           
             
             
-                <!-- Local TOC -->
-                <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to PBasic for Kids!</a><ul>
-<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="printing.html">Printing output to the Console</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_statements.html">Conditional Statements</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#variables">Variables</a><ul>
-<li><a class="reference internal" href="#defining-and-using-variables">Defining and Using Variables</a><ul>
-<li><a class="reference internal" href="#here-s-an-analogy-of-how-the-size-difference-works">Here&#8217;s an analogy of how the size difference works</a></li>
-<li><a class="reference internal" href="#some-examples-of-declaring-variables">Some examples of declaring variables</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#some-notes-on-variable-types">Some Notes on Variable Types</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#printing-output-to-the-console">Printing output to the Console</a><ul>
-<li><a class="reference internal" href="#more-examples">More Examples</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#conditional-statements">Conditional Statements</a><ul>
-<li><a class="reference internal" href="#chaining-mutliple-if-then-statements-together">Chaining mutliple IF.. THEN statements together</a></li>
-<li><a class="reference internal" href="#nesting-if-statements">Nesting IF Statements</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-</ul>
-</li>
-</ul>
-</div>
+
             
           
         </div>
@@ -156,277 +137,46 @@
 <p>This is a beginner&#8217;s guide for getting started on <a class="reference external" href="http://learn.parallax.com/educators/teach/pbasic-programming-basic-stamp">PBasic</a> which is a programming language created by <a class="reference external" href="https://www.parallax.com/">Parralax</a> as an
 easy way to interact with their various robots. For new beginners it can be a little hard to grasp various concepts of programming but
 PBasic does a good job at being a language to power the robots while still being user friendly.</p>
-<div class="section" id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>Before we get started here are a couple of things you should consider downloading: <br />
-(<em>For Windows</em>) <br /></p>
-<ol class="arabic simple">
-<li><a class="reference external" href="https://www.parallax.com/downloads/parallax-usb-driver-installer">Parralax USB Driver</a> - USB Driver to recognize the conncetion between your computer and parralax robot</li>
-<li><a class="reference external" href="https://www.parallax.com/downloads/basic-stamp-editor-software-windows">BASIC Stamp Editor</a> - A basic IDE to run your PBasic files on your robot.</li>
-</ol>
-<p>We&#8217;ll be starting off with the easy concepts first as they are part of the core to build upon later on. First on the list
-is Variables!</p>
-<hr class="docutils" />
-</div>
-</div>
-<div class="section" id="variables">
-<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h1>
-<p>Variables are a way to temporarily store data. Think of it as the same as variables in your math class where you can define
-x = 5</p>
-<div class="section" id="defining-and-using-variables">
-<h2>Defining and Using Variables<a class="headerlink" href="#defining-and-using-variables" title="Permalink to this headline">¶</a></h2>
-<p>Before you can use a variable in a PBASIC program you must declare it. &#8220;Declare&#8221; means letting the BASIC Stamp know that
-you plan to use a variable. The format for declaring variables is as follows</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">variable_name</span>    <span class="n">VAR</span>     <span class="n">VarType</span>
-</pre></div>
-</div>
-<p>VarType refers to the following 4 values: <strong>Bit</strong>, <strong>Nib</strong>, <strong>Byte</strong>, and <strong>Word</strong>. Try to think of a variable type as classifying how much
-space the variable has to store values.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="26%" />
-<col width="74%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">VarType</th>
-<th class="head">Value Size</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Bit</td>
-<td>Value can be 0 or 1</td>
-</tr>
-<tr class="row-odd"><td>Nib</td>
-<td>Value can be 0 to 15</td>
-</tr>
-<tr class="row-even"><td>Byte</td>
-<td>Value can be 0 to 255</td>
-</tr>
-<tr class="row-odd"><td>Word</td>
-<td>Value can be 0 to 65535</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="here-s-an-analogy-of-how-the-size-difference-works">
-<h3>Here&#8217;s an analogy of how the size difference works<a class="headerlink" href="#here-s-an-analogy-of-how-the-size-difference-works" title="Permalink to this headline">¶</a></h3>
-<p>We can arrange these 4 objects in order by how much they can store: Envelope, Shoebox, Fridge, Room</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Envelope</span> <span class="p">(</span><span class="n">Bit</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Shoebox</span> <span class="p">(</span><span class="n">Nib</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Fridge</span> <span class="p">(</span><span class="n">Byte</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Room</span> <span class="p">(</span><span class="n">Word</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="some-examples-of-declaring-variables">
-<h3>Some examples of declaring variables<a class="headerlink" href="#some-examples-of-declaring-variables" title="Permalink to this headline">¶</a></h3>
-<p>Choose variable names that make sense to you and are not absurd like: ThisVariable_DoessomethingreallyCOOL</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span>               <span class="n">VAR</span>     <span class="n">Bit</span>
-<span class="n">dog</span>             <span class="n">VAR</span>     <span class="n">WORD</span>
-<span class="n">is_zero</span>         <span class="n">VAR</span>     <span class="n">Nib</span>
-<span class="n">someVariable</span>    <span class="n">VAR</span>     <span class="n">Byte</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="some-notes-on-variable-types">
-<h2>Some Notes on Variable Types<a class="headerlink" href="#some-notes-on-variable-types" title="Permalink to this headline">¶</a></h2>
-<p>Under certain situations you might use different variable types. However, for the programming problems that you will
-encounter while undergoing the competition it might be best to just stick to <strong>Byte</strong> and <strong>Word</strong></p>
-<hr class="docutils" />
-</div>
-</div>
-<div class="section" id="printing-output-to-the-console">
-<h1>Printing output to the Console<a class="headerlink" href="#printing-output-to-the-console" title="Permalink to this headline">¶</a></h1>
-<p><strong>DEBUG</strong> is used to print output to the computer screen while running your program. Think of it as a way to make sure things are
-are running properly while your program runs.</p>
-<p><strong>The easiest use case is regular messages:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">DEBUG</span>   <span class="s2">&quot;Hello, World!&quot;</span>
-<span class="n">DEBUG</span>   <span class="s2">&quot;I&#39;m learning how to program.&quot;</span>
-</pre></div>
-</div>
-<p><strong>Multiple messages added together on the same line by using the comma seperator:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">DEBUG</span>   <span class="s2">&quot;Wow this is a&quot;</span><span class="p">,</span> <span class="s2">&quot; multi message!&quot;</span>
-</pre></div>
-</div>
-<p><strong>We can use the keyword (CR) to start on a new line. Think of it like pressing enter in Microsoft Word:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">DEBUG</span>   <span class="s2">&quot;This should be on&quot;</span><span class="p">,</span> <span class="n">CR</span>
-<span class="n">DEBUG</span>   <span class="s2">&quot;multiple lines.&quot;</span>
-</pre></div>
-</div>
-<p><strong>We can also print variables:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span>   <span class="n">VAR</span>     <span class="n">Word</span>
-
-<span class="n">Init</span><span class="p">:</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">65</span>
-
-<span class="n">Main</span><span class="p">:</span>
-    <span class="n">DEBUG</span> <span class="n">x</span>
-    <span class="n">END</span>
-</pre></div>
-</div>
-<p>Uh oh! When trying to run the above code there should be an issue. It&#8217;s printing the letter &#8220;A&#8221;?!
-This is because by default the BS2 model displays everything as <a class="reference external" href="https://en.wikipedia.org/wiki/ASCII">ASCII</a> characters. I won&#8217;t go into detail what ASCII is but
-you can follow the link to read more.</p>
-<p>Anyways, in order to properly print the value of <em>x</em> we need to use the decimal formatter, <strong>DEC</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span>   <span class="n">VAR</span>     <span class="n">Word</span>
-
-<span class="n">Init</span><span class="p">:</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">65</span>
-
-<span class="n">Main</span><span class="p">:</span>
-    <span class="n">DEBUG</span> <span class="n">DEC</span> <span class="n">x</span>
-    <span class="n">END</span>
-</pre></div>
-</div>
-<div class="section" id="more-examples">
-<h2>More Examples<a class="headerlink" href="#more-examples" title="Permalink to this headline">¶</a></h2>
-<p>Using the keyword (<strong>?</strong>) we can auto-print the variable name</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     Word
-
-Init:
-    x = 65
-
-Main:
-    DEBUG DEC ? x
-    END
-</pre></div>
-</div>
-<hr class="docutils" />
-</div>
-</div>
-<div class="section" id="conditional-statements">
-<h1>Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
-<p>Conditional statement are used as a way to direct the way things operate. For example, if I say &#8220;Please go to the store to
-buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
-<p>Notice how If there isn&#8217;t milk then we buy apple juice. However if there IS milk then we buy milk. This type of conditional statements
-are ordered like this in PBasic:</p>
-<dl class="docutils">
-<dt>::</dt>
-<dd><dl class="first last docutils">
-<dt>IF (<em>condition</em>) THEN</dt>
-<dd><em>statement(s)</em></dd>
-</dl>
-</dd>
-</dl>
-<p>A condition is made up of comparison symbols</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="48%" />
-<col width="52%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Comparison Operator Symbol</th>
-<th class="head">Definition</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>=</td>
-<td>Equal</td>
-</tr>
-<tr class="row-odd"><td>&lt;&gt;</td>
-<td>Not Equal</td>
-</tr>
-<tr class="row-even"><td>&gt;</td>
-<td>Greater Than</td>
-</tr>
-<tr class="row-odd"><td>&lt;</td>
-<td>Less Than</td>
-</tr>
-<tr class="row-even"><td>&gt;=</td>
-<td>Greater Than or Equal To</td>
-</tr>
-<tr class="row-odd"><td>&lt;=</td>
-<td>Less Than or Equal To</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Here are some examples:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">(</span><span class="mi">4</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">DEBUG</span> <span class="s2">&quot;4 equals 5&quot;</span>
-<span class="n">ENDIF</span>
-
-<span class="n">IF</span> <span class="p">(</span><span class="mi">10</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">DEBUG</span> <span class="s2">&quot;10 is less than or equal to 100&quot;</span>
-<span class="n">ENDIF</span>
-</pre></div>
-</div>
-<div class="section" id="chaining-mutliple-if-then-statements-together">
-<h2>Chaining mutliple IF.. THEN statements together<a class="headerlink" href="#chaining-mutliple-if-then-statements-together" title="Permalink to this headline">¶</a></h2>
-<p>You can also call chain multiple IF.. THEN statements together through the use of IF.. ELSEIF.. and/or ELSE..</p>
-<p><strong>Structure for Multiple If statements:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">ELSEIF</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="n">THEN</span>
-    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">ELSE</span>
-    <span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="n">ENDIF</span>
-</pre></div>
-</div>
-<p><strong>Example:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
-
-Main:
-    x = 100
-
-    IF (x &lt; 200) THEN
-        DEBUG DEC ? x
-    ELSEIF (x &lt; 50) THEN
-        DEBUG DEC ? x
-    ELSE
-        DEBUG DEC ? x
-    ENDIF
-</pre></div>
-</div>
-<p><strong>Notes about Mutliple If statements</strong>
-It&#8217;s not necessary to have an ELSE statement at the end. If it&#8217;s omitted then the statement will stop at the last ELSEIF statement instead.</p>
-<p>Which means that this is also a valid IF Statement:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
-
-Main:
-    x = 100
-
-    IF (x &lt; 200) THEN
-        DEBUG DEC ? x
-    ELSEIF (x &lt; 50) THEN
-        DEBUG DEC ? x
-    ENDIF
-</pre></div>
-</div>
-</div>
-<div class="section" id="nesting-if-statements">
-<h2>Nesting IF Statements<a class="headerlink" href="#nesting-if-statements" title="Permalink to this headline">¶</a></h2>
-<p>You also have the ability to nest IF statements inside of each other like so:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>x   VAR     WORD
-
-Main:
-    x = 5
-
-    IF (x &lt; 10) THEN
-        IF (x &gt; 5) THEN
-            DEBUG &quot;x is between 5 and 10&quot;
-            DEBUG ? x
-</pre></div>
-</div>
-<p>Try to think of nesting as asking another question once you received an answer to your previous question.
-For example, &#8220;Did Joe go to the store? If so, did he buy chocolate? If he didn&#8217;t buy chocolate, did he buy milk?&#8221;</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>Did Joe go to the store?
-    If so, did he buy chocolate?
-    If he didn&#39;t buy chocolate, did he buy milk?
-</pre></div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#defining-and-using-variables">Defining and Using Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#some-notes-on-variable-types">Some Notes on Variable Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="printing.html">Printing output to the Console</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="printing.html#more-examples">More Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_statements.html">Conditional Statements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conditional_statements.html#chaining-mutliple-if-then-statements-together">Chaining mutliple IF.. THEN statements together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditional_statements.html#nesting-if-statements">Nesting IF Statements</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
-<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
 <li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
 <li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
 </div>
-</div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>
