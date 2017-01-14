@@ -150,20 +150,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="toctree-wrapper compound">
-</div>
-<div class="section" id="welcome-to-pbasic-for-kids">
+  <div class="section" id="welcome-to-pbasic-for-kids">
 <h1>Welcome to PBasic for Kids!<a class="headerlink" href="#welcome-to-pbasic-for-kids" title="Permalink to this headline">¶</a></h1>
-<p>This is a beginner&#8217;s guide for getting started on <a class="reference external" href="http://learn.parallax.com/educators/teach/pbasic-programming-basic-stamp">PBasic</a>. which is a programming language created by <a class="reference external" href="https://www.parallax.com/">Parralax</a>. as an
+<p>This is a beginner&#8217;s guide for getting started on <a class="reference external" href="http://learn.parallax.com/educators/teach/pbasic-programming-basic-stamp">PBasic</a> which is a programming language created by <a class="reference external" href="https://www.parallax.com/">Parralax</a> as an
 easy way to interact with their various robots. For new beginners it can be a little hard to grasp various concepts of programming but
 PBasic does a good job at being a language to power the robots while still being user friendly.</p>
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>Before we get started here are a couple of things you should consider downloading: <br />
+(<em>For Windows</em>) <br /></p>
+<ol class="arabic simple">
+<li><a class="reference external" href="https://www.parallax.com/downloads/parallax-usb-driver-installer">Parralax USB Driver</a> - USB Driver to recognize the conncetion between your computer and parralax robot</li>
+<li><a class="reference external" href="https://www.parallax.com/downloads/basic-stamp-editor-software-windows">BASIC Stamp Editor</a> - A basic IDE to run your PBasic files on your robot.</li>
+</ol>
 <p>We&#8217;ll be starting off with the easy concepts first as they are part of the core to build upon later on. First on the list
 is Variables!</p>
 <hr class="docutils" />
-<div class="toctree-wrapper compound">
-</div>
 </div>
 </div>
 <div class="section" id="variables">
@@ -226,9 +228,9 @@ space the variable has to store values.</p>
 <h2>Some Notes on Variable Types<a class="headerlink" href="#some-notes-on-variable-types" title="Permalink to this headline">¶</a></h2>
 <p>Under certain situations you might use different variable types. However, for the programming problems that you will
 encounter while undergoing the competition it might be best to just stick to <strong>Byte</strong> and <strong>Word</strong></p>
-</div>
-</div>
 <hr class="docutils" />
+</div>
+</div>
 <div class="section" id="printing-output-to-the-console">
 <h1>Printing output to the Console<a class="headerlink" href="#printing-output-to-the-console" title="Permalink to this headline">¶</a></h1>
 <p><strong>DEBUG</strong> is used to print output to the computer screen while running your program. Think of it as a way to make sure things are
@@ -285,9 +287,9 @@ Main:
     END
 </pre></div>
 </div>
-</div>
-</div>
 <hr class="docutils" />
+</div>
+</div>
 <div class="section" id="conditional-statements">
 <h1>Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h1>
 <p>Conditional statement are used as a way to direct the way things operate. For example, if I say &#8220;Please go to the store to
@@ -337,9 +339,11 @@ are ordered like this in PBasic:</p>
 <p><strong>Here are some examples:</strong></p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="p">(</span><span class="mi">4</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="n">THEN</span>
     <span class="n">DEBUG</span> <span class="s2">&quot;4 equals 5&quot;</span>
+<span class="n">ENDIF</span>
 
 <span class="n">IF</span> <span class="p">(</span><span class="mi">10</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)</span> <span class="n">THEN</span>
     <span class="n">DEBUG</span> <span class="s2">&quot;10 is less than or equal to 100&quot;</span>
+<span class="n">ENDIF</span>
 </pre></div>
 </div>
 <div class="section" id="chaining-mutliple-if-then-statements-together">

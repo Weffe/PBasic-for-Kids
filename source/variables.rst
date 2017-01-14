@@ -1,5 +1,7 @@
 ..  toctree::
     :maxdepth: 3
+    Variables
+    Defining and Using Variables
 
 Variables
 *********

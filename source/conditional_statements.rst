@@ -1,3 +1,9 @@
+..  toctree::
+    :maxdepth: 3
+    :numbered:
+    Conditional Statements
+    Chaining mutliple IF.. THEN statements together
+
 Conditional Statements
 **********************
 Conditional statement are used as a way to direct the way things operate. For example, if I say "Please go to the store to
