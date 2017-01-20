@@ -26,4 +26,4 @@ type headers at the top of your file. These type headers are required in order t
 the Stamp Editor to know which version of PBasic to compile and run on your robot(s).
 
 For this guide you will be using the Green button and PBasic 2.5
-.. image:: imgs\buttons_to_click.png
+.. image:: ./imgs/buttons_to_click.png
