@@ -43,6 +43,7 @@ Comparison Operator Symbol	Definition
 
 Chaining mutliple IF.. THEN statements together
 ===============================================
+
 You can also call chain multiple IF.. THEN statements together through the use of IF.. ELSEIF.. and/or ELSE..
 
 **Structure for Multiple If statements:**
@@ -89,19 +90,115 @@ Which means that this is also a valid IF Statement:
             DEBUG DEC ? x
         ENDIF
 
+Conditional Logic Operators
+===========================
+
+::
+
+        IF (condition) THEN
+            statement(s)
+        ENDIF
+
+A condition is also made up of logic operators:
+
+1. NOT
+2. AND
+3. OR
+
+Logic operators are a little more confusing. The reason to use logic operators is to
+do multiple comparisons in one IF statement. Take for example:
+::
+
+        IF (5 < 10) AND (1 < 5) THEN
+            DEBUG "Hello there!"
+        ELSE
+            DEBUG "Goodbye!"
+        ENDIF
+
+Here we have two conditions that we test inside one IF statement **AND** only if they are both true
+will you see "Hello there!" printed.
+
+The following tables and examples may help make clear how logic operators work together:
+
+Logic Operator: NOT
+------------------
+
+::
+
+        IF NOT (1 > 10) THEN
+            DEBUG "Hello World!"
+        ELSE
+            DEBUG "Goodbye"
+        ENDIF
+
+        ' Result: True
+
+===========     =====
+Condition A     NOT A
+===========     =====
+False           True
+True            False
+===========     =====
+
+Logic Operator: AND
+-------------------
+
+::
+
+        IF (1 > 10) AND (4 = 4) THEN
+            DEBUG "Hello World!"
+        ELSE
+            DEBUG "Goodbye"
+        ENDIF
+
+        ' Result: False
+
+===========     ===========     =======
+Condition A     Condition B     A AND B
+===========     ===========     =======
+False           False           False
+False           True            False
+True            False           False
+True            True            True
+===========     ===========     =======
+
+Logic Operator: OR
+------------------
+
+::
+
+        IF (1 > 10) OR (4 = 4) THEN
+            DEBUG "Hello World!"
+        ELSE
+            DEBUG "Goodbye"
+        ENDIF
+
+        ' Result: True
+
+===========     ===========     ======
+Condition A     Condition B     A OR B
+===========     ===========     ======
+False           False           False
+False           True            True
+True            False           True
+True            True            True
+===========     ===========     ======
+
+
 Nesting IF Statements
 =====================
+
 You also have the ability to nest IF statements inside of each other like so:
 ::
         x   VAR     WORD
 
         Main:
-            x = 5
+            x = 7
 
             IF (x < 10) THEN
                 IF (x > 5) THEN
                     DEBUG "x is between 5 and 10"
-                    DEBUG ? x
+                    DEBUG DEC ? x
                 ENDIF
             ENDIF
 

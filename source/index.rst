@@ -8,12 +8,15 @@ PBasic does a good job at being a language to power the robots while still being
 .. _PBasic: http://learn.parallax.com/educators/teach/pbasic-programming-basic-stamp
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 4
 
     getting_started
+    comments
     variables
     printing
     conditional_statements
+    do_loops
+    for_loops
 
 Indices and tables
 ==================

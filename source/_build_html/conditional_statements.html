@@ -34,6 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="PBasic for Kids 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Do Loops" href="do_loops.html"/>
         <link rel="prev" title="Printing output to the Terminal" href="printing.html"/> 
 
   
@@ -85,6 +86,7 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comments.html">Comments in PBasic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="printing.html">Printing output to the Terminal</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Conditional Statements</a><ul>
@@ -92,9 +94,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#notes-about-mutliple-if-statements">Notes about Mutliple If statements</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#conditional-logic-operators">Conditional Logic Operators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#logic-operator-not">Logic Operator: NOT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logic-operator-and">Logic Operator: AND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logic-operator-or">Logic Operator: OR</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#nesting-if-statements">Nesting IF Statements</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="do_loops.html">Do Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="for_loops.html">FOR Loops</a></li>
 </ul>
 
             
@@ -272,6 +282,173 @@ buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
 </td></tr></table></div>
 </div>
 </div>
+<div class="section" id="conditional-logic-operators">
+<h2>Conditional Logic Operators<a class="headerlink" href="#conditional-logic-operators" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">condition</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">statement</span><span class="p">(</span><span class="vg">s</span><span class="p">)</span>
+<span class="k">ENDIF</span>
+</pre></div>
+</td></tr></table></div>
+<p>A condition is also made up of logic operators:</p>
+<ol class="arabic simple">
+<li>NOT</li>
+<li>AND</li>
+<li>OR</li>
+</ol>
+<p>Logic operators are a little more confusing. The reason to use logic operators is to
+do multiple comparisons in one IF statement. Take for example:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="il">5</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">10</span><span class="p">)</span><span class="w"> </span><span class="ow">AND</span><span class="w"> </span><span class="p">(</span><span class="il">1</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">5</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Hello there!&quot;</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Goodbye!&quot;</span>
+<span class="k">ENDIF</span>
+</pre></div>
+</td></tr></table></div>
+<p>Here we have two conditions that we test inside one IF statement <strong>AND</strong> only if they are both true
+will you see &#8220;Hello there!&#8221; printed.</p>
+<p>The following tables and examples may help make clear how logic operators work together:</p>
+<div class="section" id="logic-operator-not">
+<h3>Logic Operator: NOT<a class="headerlink" href="#logic-operator-not" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="ow">NOT</span><span class="w"> </span><span class="p">(</span><span class="il">1</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="il">10</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Hello World!&quot;</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Goodbye&quot;</span>
+<span class="k">ENDIF</span>
+
+<span class="c1">&#39; Result: True</span>
+</pre></div>
+</td></tr></table></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="69%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Condition A</th>
+<th class="head">NOT A</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>True</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="logic-operator-and">
+<h3>Logic Operator: AND<a class="headerlink" href="#logic-operator-and" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="il">1</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="il">10</span><span class="p">)</span><span class="w"> </span><span class="ow">AND</span><span class="w"> </span><span class="p">(</span><span class="vg">4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">4</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Hello World!&quot;</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Goodbye&quot;</span>
+<span class="k">ENDIF</span>
+
+<span class="c1">&#39; Result: False</span>
+</pre></div>
+</td></tr></table></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="38%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Condition A</th>
+<th class="head">Condition B</th>
+<th class="head">A AND B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="logic-operator-or">
+<h3>Logic Operator: OR<a class="headerlink" href="#logic-operator-or" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="il">1</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="il">10</span><span class="p">)</span><span class="w"> </span><span class="ow">OR</span><span class="w"> </span><span class="p">(</span><span class="vg">4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">4</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Hello World!&quot;</span>
+<span class="k">ELSE</span>
+<span class="w">    </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Goodbye&quot;</span>
+<span class="k">ENDIF</span>
+
+<span class="c1">&#39; Result: True</span>
+</pre></div>
+</td></tr></table></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="39%" />
+<col width="21%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Condition A</th>
+<th class="head">Condition B</th>
+<th class="head">A OR B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <div class="section" id="nesting-if-statements">
 <h2>Nesting IF Statements<a class="headerlink" href="#nesting-if-statements" title="Permalink to this headline">¶</a></h2>
 <p>You also have the ability to nest IF statements inside of each other like so:</p>
@@ -288,12 +465,12 @@ buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
 11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">x</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
 
 <span class="nl">Main:</span>
-<span class="w">    </span><span class="vg">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">5</span>
+<span class="w">    </span><span class="vg">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">7</span>
 
 <span class="w">    </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="il">10</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
 <span class="w">        </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="il">5</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
 <span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;x is between 5 and 10&quot;</span>
-<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
+<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="vg">DEC</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="vg">x</span>
 <span class="w">        </span><span class="k">ENDIF</span>
 <span class="w">    </span><span class="k">ENDIF</span>
 </pre></div>
@@ -327,6 +504,8 @@ buy milk. If they don&#8217;t have milk then buy apple juice&#8221;.</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="do_loops.html" class="btn btn-neutral float-right" title="Do Loops" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="printing.html" class="btn btn-neutral" title="Printing output to the Terminal" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
