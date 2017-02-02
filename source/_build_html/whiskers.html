@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; PBasic for Kids 1.0 documentation</title>
+  <title>Whiskers &mdash; PBasic for Kids 1.0 documentation</title>
   
 
   
@@ -32,8 +32,10 @@
   
         <link rel="index" title="Index"
               href="genindex.html"/>
-        <link rel="search" title="Search" href="#"/>
-    <link rel="top" title="PBasic for Kids 1.0 documentation" href="index.html"/> 
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="PBasic for Kids 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Contact" href="contact.html"/>
+        <link rel="prev" title="Subroutines" href="subroutines.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -68,7 +70,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -82,7 +84,7 @@
           
             
             
-                <ul>
+                <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="comments.html">Comments in PBasic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
@@ -92,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="for_loops.html">FOR Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="movement.html">Movement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subroutines.html">Subroutines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="whiskers.html">Whiskers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Whiskers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
 </ul>
 
@@ -116,7 +118,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -124,8 +126,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Search</li>
+    <li>Whiskers</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/whiskers.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -134,23 +140,66 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="whiskers">
+<h1>Whiskers<a class="headerlink" href="#whiskers" title="Permalink to this headline">¶</a></h1>
+<p>Whiskers are one of the components included in the robot kit. Whisker sensors allow
+the robot to detect obstacles when it bumps into them.</p>
+<img alt="_images/concept_whiskers.jpg" src="_images/concept_whiskers.jpg" />
+<p>Whisker values are accessed via <strong>IN5</strong> and <strong>IN7</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">IN id</th>
+<th class="head">Whisker</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>IN5</td>
+<td>Left Whisker</td>
+</tr>
+<tr class="row-odd"><td>IN7</td>
+<td>Right Whisker</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Whisker State</th>
+<th class="head">Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Unpressed</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Pressed</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>More information to come!</p>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contact.html" class="btn btn-neutral float-right" title="Contact" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="subroutines.html" class="btn btn-neutral" title="Subroutines" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -188,7 +237,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -204,14 +252,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

@@ -17,6 +17,9 @@ PBasic does a good job at being a language to power the robots while still being
     conditional_statements
     do_loops
     for_loops
+    movement
+    subroutines
+    whiskers
     contact
 
 Indices and tables

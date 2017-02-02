@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Movement &mdash; PBasic for Kids 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="PBasic for Kids 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Contact" href="contact.html"/>
+        <link rel="prev" title="FOR Loops" href="for_loops.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PBasic for Kids
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comments.html">Comments in PBasic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="printing.html">Printing output to the Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditional_statements.html">Conditional Statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="do_loops.html">Do Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="for_loops.html">FOR Loops</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Movement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#moving-forward">Moving Forward</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moving-backwards">Moving Backwards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#turning">Turning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pivot-turn">Pivot Turn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spin-turn">Spin Turn</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#practice">Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">PBasic for Kids</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Movement</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/movement.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="movement">
+<h1>Movement<a class="headerlink" href="#movement" title="Permalink to this headline">¶</a></h1>
+<p>Moving the wheels of the robot is fairly simple. We will use the <strong>PULSOUT</strong> keyword
+to send a signal to the wheels to turn. Each wheel has a unique ID and takes in a range
+of &#8220;power values&#8221; for how fast the wheel spins and in what direction.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="11%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Wheel</th>
+<th class="head">ID</th>
+<th class="head">Power Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Right</td>
+<td>13</td>
+<td>650 &lt;=&gt; 850</td>
+</tr>
+<tr class="row-odd"><td>Left</td>
+<td>12</td>
+<td>650 &lt;=&gt; 850</td>
+</tr>
+</tbody>
+</table>
+<p>The power values dictate how fast the wheel spins in a certain direction.
+Think of a number line where 650 and 850 are at the ends and 750 is the center.</p>
+<img alt="_images/power_range_number_line.png" src="_images/power_range_number_line.png" />
+<p>Consider 750 to be the neutral value. This means if you set a wheel to a value of
+750 it shouldnt move.</p>
+<p>If you set a wheel to either 650 or 850 then it will move at full power in a certain direction.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Power Value</th>
+<th class="head">Direction</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>650</td>
+<td>Clockwise</td>
+</tr>
+<tr class="row-odd"><td>750</td>
+<td>None</td>
+</tr>
+<tr class="row-even"><td>850</td>
+<td>Counter-Clockwise</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="moving-forward">
+<h2>Moving Forward<a class="headerlink" href="#moving-forward" title="Permalink to this headline">¶</a></h2>
+<p>In order to move the robot forward we need to spin each wheel either counter-clockwise
+or clockwise but not the same. Running this code below will make the wheels move
+in a very short burst.</p>
+<div class="highlight-basic"><div class="highlight"><pre><span></span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+</pre></div>
+</div>
+<p>To continuously go forwards for a small time we program it like so:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">i</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+
+<span class="kr">FOR</span><span class="w"> </span><span class="vg">i</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">100</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="kr">NEXT</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="moving-backwards">
+<h2>Moving Backwards<a class="headerlink" href="#moving-backwards" title="Permalink to this headline">¶</a></h2>
+<p>We have the same idea as moving forwards except the values are flipped.</p>
+<div class="highlight-basic"><div class="highlight"><pre><span></span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+</pre></div>
+</div>
+<p>And again to continuously go backwards for a small time we program it like so:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">i</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+
+<span class="kr">FOR</span><span class="w"> </span><span class="vg">i</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">100</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="kr">NEXT</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="turning">
+<h2>Turning<a class="headerlink" href="#turning" title="Permalink to this headline">¶</a></h2>
+<p>There are 2 approaches to turning your robot.</p>
+<ol class="arabic simple">
+<li>Pivot Turn</li>
+<li>Spin Turn</li>
+</ol>
+<p>This diagram helps to explain the key differences:</p>
+<img alt="_images/pivot_vs_turn.jpg" src="_images/pivot_vs_turn.jpg" />
+<p>Ultimately what type of turns you want to perform is up to you. Just make sure you&#8217;re
+consistent with the type of turns you perform.</p>
+<div class="section" id="pivot-turn">
+<h3>Pivot Turn<a class="headerlink" href="#pivot-turn" title="Permalink to this headline">¶</a></h3>
+<p>Depending on the wheel you want to pivot about influences what code to use.</p>
+<p>Pivot about Left Wheel:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">i</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+
+<span class="kr">FOR</span><span class="w"> </span><span class="vg">i</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">100</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="kr">NEXT</span>
+</pre></div>
+</td></tr></table></div>
+<p>Pivot about Right Wheel:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">i</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+
+<span class="kr">FOR</span><span class="w"> </span><span class="vg">i</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">100</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="kr">NEXT</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="spin-turn">
+<h3>Spin Turn<a class="headerlink" href="#spin-turn" title="Permalink to this headline">¶</a></h3>
+<p>Spin turns move both wheels in the same direction either clockwise or counter-clockwise.</p>
+<p>Spinning in Clockwise direction:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">i</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+
+<span class="kr">FOR</span><span class="w"> </span><span class="vg">i</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">100</span>
+<span class="w">  </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="w">  </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="kr">NEXT</span>
+</pre></div>
+</td></tr></table></div>
+<p>Spinning in Counter-Clockwise direction:</p>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">i</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">WORD</span>
+
+<span class="kr">FOR</span><span class="w"> </span><span class="vg">i</span><span class="o">=</span><span class="il">1</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">100</span>
+<span class="w">  </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="w">  </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="kr">NEXT</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="practice">
+<h2>Practice<a class="headerlink" href="#practice" title="Permalink to this headline">¶</a></h2>
+<p>I&#8217;d like to challenge you to program your robot to move forward, spin in some direction,
+and then backup with what you&#8217;ve learned so far. In addition, you should try to practice
+more by programming your own little movement sequence.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contact.html" class="btn btn-neutral float-right" title="Contact" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="for_loops.html" class="btn btn-neutral" title="FOR Loops" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Rogelio Negrete.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
