@@ -34,7 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="PBasic for Kids 1.0 documentation" href="index.html"/>
-        <link rel="next" title="Contact" href="contact.html"/>
+        <link rel="next" title="Infrared Sensors" href="infrared_sensor.html"/>
         <link rel="prev" title="Subroutines" href="subroutines.html"/> 
 
   
@@ -94,7 +94,13 @@
 <li class="toctree-l1"><a class="reference internal" href="for_loops.html">FOR Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="movement.html">Movement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subroutines.html">Subroutines</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Whiskers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Whiskers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#example-outputting-values-when-pressed">Example: Outputting values when pressed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-utilizing-the-whiskers">Example: Utilizing the whiskers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="infrared_sensor.html">Infrared Sensors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
 </ul>
 
@@ -184,7 +190,164 @@ the robot to detect obstacles when it bumps into them.</p>
 </tr>
 </tbody>
 </table>
-<p>More information to come!</p>
+<div class="section" id="example-outputting-values-when-pressed">
+<h2>Example: Outputting values when pressed<a class="headerlink" href="#example-outputting-values-when-pressed" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">left_whisker</span><span class="w">    </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Bit</span>
+<span class="vg">right_whisker</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Bit</span>
+
+<span class="nl">Main:</span>
+<span class="w">    </span><span class="kr">DO</span>
+<span class="w">        </span><span class="vg">left_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">IN5</span>
+<span class="w">        </span><span class="vg">right_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">IN7</span>
+
+<span class="w">        </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">left_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="ow">AND</span><span class="w"> </span><span class="p">(</span><span class="vg">right_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Both Whiskers were pressed!&quot;</span>
+<span class="w">        </span><span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">left_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Left Whisker was pressed!&quot;</span>
+<span class="w">        </span><span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">right_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;Right Whisker was pressed!&quot;</span>
+<span class="w">        </span><span class="k">ELSE</span>
+<span class="w">            </span><span class="vg">DEBUG</span><span class="w"> </span><span class="s2">&quot;No Whiskers are pressed...&quot;</span>
+<span class="w">        </span><span class="k">ENDIF</span>
+<span class="w">    </span><span class="kr">LOOP</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="example-utilizing-the-whiskers">
+<h2>Example: Utilizing the whiskers<a class="headerlink" href="#example-utilizing-the-whiskers" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-basic"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="vg">left_whisker</span><span class="w">    </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Bit</span>
+<span class="vg">right_whisker</span><span class="w">   </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Bit</span>
+<span class="vg">pulse_count</span><span class="w">     </span><span class="vg">VAR</span><span class="w">     </span><span class="vg">Byte</span>
+
+<span class="nl">Main:</span>
+<span class="w">    </span><span class="vg">left_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">IN5</span>
+<span class="w">    </span><span class="vg">right_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">IN7</span>
+
+<span class="w">    </span><span class="kr">DO</span>
+<span class="w">        </span><span class="kr">IF</span><span class="w"> </span><span class="p">(</span><span class="vg">left_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="ow">AND</span><span class="w"> </span><span class="p">(</span><span class="vg">right_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">            </span><span class="c1">&#39; Left and Right whiskers are pressed so we back up and make a U-turn by default</span>
+<span class="w">            </span><span class="c1">&#39; A U-turn is just 2 left turns</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Back_Up</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Spin_Turn_Left</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Spin_Turn_Left</span>
+<span class="w">        </span><span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">left_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Back_Up</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Spin_Turn_Right</span>
+<span class="w">        </span><span class="k">ELSEIF</span><span class="w"> </span><span class="p">(</span><span class="vg">right_whisker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="p">)</span><span class="w"> </span><span class="kr">THEN</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Back_Up</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Spin_Turn_Left</span>
+<span class="w">        </span><span class="k">ELSE</span>
+<span class="w">            </span><span class="c1">&#39; here the whiskers are NOT in contact with a wall so we pulse forward</span>
+<span class="w">            </span><span class="kr">GOSUB</span><span class="w"> </span><span class="nl">Pulse_Forward</span>
+<span class="w">        </span><span class="k">ENDIF</span>
+<span class="w">    </span><span class="kr">LOOP</span>
+
+
+<span class="nl">Pulse_Forward:</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="il">850</span>
+<span class="w">    </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="il">650</span>
+<span class="kr">RETURN</span>
+
+<span class="nl">Spin_Turn_Left:</span>
+<span class="w">    </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">pulse_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">50</span>
+<span class="w">        </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="w">        </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="w">    </span><span class="kr">NEXT</span>
+<span class="kr">RETURN</span>
+
+<span class="nl">Spin_Turn_Right:</span>
+<span class="w">    </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">pulse_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">50</span>
+<span class="w">        </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="w">        </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="w">    </span><span class="kr">NEXT</span>
+<span class="kr">RETURN</span>
+
+<span class="nl">Back_Up:</span>
+<span class="w">    </span><span class="kr">FOR</span><span class="w"> </span><span class="vg">pulse_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">0</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="il">50</span>
+<span class="w">        </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">13</span><span class="p">,</span><span class="w"> </span><span class="il">650</span>
+<span class="w">        </span><span class="vg">PULSOUT</span><span class="w"> </span><span class="il">12</span><span class="p">,</span><span class="w"> </span><span class="il">850</span>
+<span class="w">    </span><span class="kr">NEXT</span>
+<span class="kr">RETURN</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>Whiskers are a good way to detect obstacles in front of the robot. However, whiskers
+aren&#8217;t the best way to detect obstacles. There are some quirks of the whiskers bending
+in weird ways and which makes them less reliable. In the next section we will cover
+Infrared Sensors which offer much more in terms of depth perception and field
+of view (fov).</p>
+</div>
 </div>
 
 
@@ -194,7 +357,7 @@ the robot to detect obstacles when it bumps into them.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="contact.html" class="btn btn-neutral float-right" title="Contact" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="infrared_sensor.html" class="btn btn-neutral float-right" title="Infrared Sensors" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="subroutines.html" class="btn btn-neutral" title="Subroutines" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

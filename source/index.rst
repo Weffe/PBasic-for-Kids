@@ -20,6 +20,7 @@ PBasic does a good job at being a language to power the robots while still being
     movement
     subroutines
     whiskers
+    infrared_sensor
     contact
 
 Indices and tables
