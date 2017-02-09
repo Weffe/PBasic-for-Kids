@@ -11,8 +11,8 @@ of "power values" for how fast the wheel spins and in what direction.
 =====   ==  ===========
 Wheel   ID  Power Value
 =====   ==  ===========
-Right   13  650 <=> 850
-Left    12  650 <=> 850
+Right   12  650 <=> 850
+Left    13  650 <=> 850
 =====   ==  ===========
 
 The power values dictate how fast the wheel spins in a certain direction.
