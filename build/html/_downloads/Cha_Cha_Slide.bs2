@@ -1,0 +1,214 @@
+' {$STAMP BS2}
+' {$PBASIC 2.5}
+
+counter VAR Word
+' This is turning left
+FOR counter=1 TO 441
+PULSOUT 12,650
+NEXT
+
+ 'THis is moving forward after it turned left
+FOR counter=1 TO  120
+PULSOUT 12, 650
+PULSOUT 13, 850
+NEXT
+ ' Rotational
+FOR counter=1 TO 88
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+
+PAUSE 300
+ 'This is going back
+FOR counter=1 TO 80
+PULSOUT 12, 850
+PULSOUT 13, 650
+NEXT
+ PAUSE 1500
+'THis is the hop
+FOR counter=1 TO 50
+PULSOUT 12, 650
+PULSOUT 13, 850
+NEXT
+
+FOR counter=1 TO 50
+PULSOUT 12, 850
+PULSOUT 13, 650
+NEXT
+' end of hop
+PAUSE 1000
+'Right foot left stomp
+FOR counter=1 TO 100
+PULSOUT 12,650
+NEXT
+PAUSE 1000
+'GO back to spot before  left stomp
+FOR counter=1 TO 80
+PULSOUT 12,850
+NEXT
+
+'LEft foot right stomp
+FOR counter=1 TO 120
+PULSOUT 13, 850
+NEXT
+PAUSE 1000
+'Go back to position before left foot right stomp
+FOR counter=1 TO 120
+PULSOUT 13, 650
+NEXT
+'Cha cha
+FOR counter=1 TO 441
+PULSOUT 12,650
+NEXT
+FOR counter=1 TO 441
+PULSOUT 12,650
+NEXT
+FOR counter=1 TO 441
+PULSOUT 12,650
+NEXT
+FOR counter=1 TO 460
+PULSOUT 12,650
+NEXT
+
+PAUSE 500
+   ' Turn around
+   FOR counter=1 TO 88
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+FOR counter=1 TO 88
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+FOR counter=1 TO 130
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+FOR counter=1 TO 125
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+'This is turning to the left
+FOR counter=1 TO 410
+PULSOUT 12,650
+NEXT
+'Going forward after a left turn
+FOR counter=1 TO 120
+PULSOUT 12, 650
+PULSOUT 13, 850
+NEXT
+ ' Rotational
+FOR counter=1 TO 88
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+PAUSE 300
+ 'This is going back
+FOR counter=1 TO 80
+PULSOUT 12, 850
+PULSOUT 13, 650
+NEXT
+PAUSE 1500
+
+'THis is the hop
+FOR counter=1 TO 50
+PULSOUT 12, 650
+PULSOUT 13, 850
+NEXT
+
+FOR counter=1 TO 50
+PULSOUT 12, 850
+PULSOUT 13, 650
+NEXT
+  PAUSE 1500
+  'Right foot left stomp
+FOR counter=1 TO 100
+PULSOUT 12,650
+NEXT
+
+'GO back to spot before stomp
+FOR counter=1 TO 80
+PULSOUT 12,850
+NEXT
+ PAUSE 1400
+ 'LEft foot left stomp
+ FOR counter=1 TO 120
+PULSOUT 13, 850
+NEXT
+'Go back to position before left foot right stomp
+FOR counter=1 TO 120
+PULSOUT 13, 650
+NEXT
+PAUSE 500
+'Cha cha
+FOR counter=1 TO 441
+PULSOUT 12,650
+NEXT
+FOR counter=1 TO 441
+PULSOUT 12,650
+NEXT
+FOR counter=1 TO 441
+PULSOUT 12,650
+NEXT
+FOR counter=1 TO 450
+PULSOUT 12,650
+NEXT
+PAUSE 600
+'GO to the right
+FOR counter=1 TO 360
+PULSOUT 13,850
+NEXT
+PAUSE 600
+'360 so it goes to the left
+FOR counter=1 TO 88
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+FOR counter=1 TO 120
+PULSOUT 12, 850
+PULSOUT 13, 850
+NEXT
+PAUSE 1000
+'Turn back to face correctly
+FOR counter=1 TO 100
+PULSOUT 12,850
+PULSOUT 13,850
+NEXT
+PAUSE 800
+'Going back
+FOR counter=1 TO 80
+PULSOUT 12, 850
+PULSOUT 13, 650
+NEXT
+PAUSE 1000
+'Double hop
+FOR counter=1 TO 50
+PULSOUT 12, 650
+PULSOUT 13, 850
+NEXT
+
+FOR counter=1 TO 50
+PULSOUT 12, 850
+PULSOUT 13, 650
+NEXT
+    PAUSE 1000
+FOR counter=1 TO 50
+PULSOUT 12, 650
+PULSOUT 13, 850
+NEXT
+
+FOR counter=1 TO 50
+PULSOUT 12, 850
+PULSOUT 13, 650
+NEXT
+
+
+
+
+
+
+
+
+
+
+
