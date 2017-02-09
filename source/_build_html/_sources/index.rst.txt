@@ -21,6 +21,7 @@ PBasic does a good job at being a language to power the robots while still being
     subroutines
     whiskers
     infrared_sensor
+    competition_files
     contact
 
 Indices and tables
